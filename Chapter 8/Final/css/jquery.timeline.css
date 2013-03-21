@@ -1,0 +1,378 @@
+/*
+ * Add new Post
+ */
+#add-post {
+	margin: 10px 0;
+	padding: 0;
+	background: #FFF;
+	border: 1px solid #D0D0D0;
+	display: block;
+	border-radius: 3px;
+	box-shadow: 0 1px 1px #EAEAEA;
+}
+
+#add-post form {
+	margin: 2px;
+	background: #FCFCFC;
+	background-image: -webkit-linear-gradient(top,#FCFCFC,#F6F6F6);
+	background-image: -moz-linear-gradient(top,#FCFCFC,#F6F6F6);
+	background-image: -ms-linear-gradient(top,#FCFCFC,#F6F6F6);
+	background-image: -o-linear-gradient(top,#FCFCFC,#F6F6F6);
+	background-image: linear-gradient(top,#FCFCFC,#F6F6F6);
+	padding: 10px 10px 0 10px;
+	border-radius: 3px;
+}
+
+#add-post form::after {
+	clear: both;
+	display: block;
+	content: "";
+}
+
+#add-post form fieldset textarea {
+	display: block;
+	margin-bottom: 10px;
+	padding: 10px;
+	width: 672px;
+	font-size: 14px;
+	resize: vertical;
+	border: 1px solid #D0D0D0;
+	box-shadow: inset 0 1px 2px #EAEAEA;
+}
+
+#add-post form fieldset input {
+	display: block;
+	margin-bottom: 2px;
+	padding: 5px 10px;
+	width: 672px;
+	font-size: 14px;
+	border: 1px solid #D0D0D0;
+	box-shadow: inset 0 1px 2px #EAEAEA;
+}
+
+#add-post form button {
+	margin: 10px 0;
+	padding: 5px 8px;
+	height: 32px;
+	line-height: 14px;
+	font-size: 14px;
+	min-width: 80px;
+	border-radius: 3px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	background-color: #006DCC;
+	background-image: -moz-linear-gradient(top, #0088cc, #0044cc);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0044cc));
+	background-image: -webkit-linear-gradient(top, #0088cc, #0044cc);
+	background-image: -o-linear-gradient(top, #0088cc, #0044cc);
+	background-image: linear-gradient(to bottom, #0088cc, #0044cc);
+	background-repeat: repeat-x;
+	border: 1px solid #DCDCDC;
+	border-color: #0044CC #0044CC #002A80;
+	border-color: rgba(0,0,0,.1) rgba(0,0,0,.1) rgba(0,0,0,.25);
+	color: #FFF;
+	text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+}
+
+#add-post form button:hover {
+	background-color: #0044CC;
+	background-position: 0 -15px;
+	-webkit-transition: background-position 0.1s linear;
+	-moz-transition: background-position 0.1s linear;
+	-o-transition: background-position 0.1s linear;
+	transition: background-position 0.1s linear;
+	box-shadow: 0 1px 1px #D0D0D0;
+}
+
+#add-post form .loading {
+	display: none;
+	float: right;
+	margin-top: 8px;
+}
+
+/*
+ * Timeline & Posts
+ */
+#posts {
+	margin: 20px 0;
+	background: transparent url('https://raw.github.com/BrunoBernardino/ProjQueryPlugins/master/assets/timeline-bg.png') top center repeat-y;
+	background-image: url('https://raw.github.com/BrunoBernardino/ProjQueryPlugins/master/assets/timeline-top-bg.png'), url('https://raw.github.com/BrunoBernardino/ProjQueryPlugins/master/assets/timeline-bottom-bg.png'), url('https://raw.github.com/BrunoBernardino/ProjQueryPlugins/master/assets/timeline-bg.png');
+	background-position: top center, bottom center, top center;
+	background-repeat: no-repeat, no-repeat, repeat-y;
+}
+
+#posts::after {
+	clear: both;
+	display: block;
+	content: "";
+}
+
+/* Timeline loading */
+#posts .loading {
+	display: none;
+	clear: both;
+}
+
+/* Individual posts */
+#posts .post {
+	margin: 0 0 10px 0;
+	padding: 0;
+	background: #FFF;
+	border: 1px solid #D0D0D0;
+	width: 348px;
+	border-radius: 3px;
+	box-shadow: 0 1px 1px #EAEAEA;
+	position: relative;
+}
+
+#posts .post[data-side="left"] {
+	clear: left;
+	float: left;
+}
+
+#posts .post[data-side="right"] {
+	clear: right;
+	float: right;
+}
+
+/* Post header */
+#posts .post header {
+	margin: 2px;
+	background: #EAEAEA;
+	padding: 10px 10px 0 10px;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+}
+
+#posts .post header::after {
+	clear: both;
+	display: block;
+	content: "";
+}
+
+#posts .post header .pointer {
+	width: 15px;
+	height: 7px;
+	background: transparent url('https://raw.github.com/BrunoBernardino/ProjQueryPlugins/master/assets/pointer-left.png') top left no-repeat;
+	position: absolute;
+	margin-left: 336px;
+	margin-top: 10px;
+}
+
+#posts .post[data-side="right"] header .pointer {
+	background-image: url('https://raw.github.com/BrunoBernardino/ProjQueryPlugins/master/assets/pointer-right.png');
+	margin-left: -27px;
+}
+
+#posts .post.too-close header .pointer {
+	margin-top: 30px;
+}
+
+/* Post header avatar */
+#posts .post .avatar {
+	margin: 0 10px 10px 0;
+	float: left;
+}
+
+#posts .post .avatar img {
+	max-width: 40px;
+	max-height: 40px;
+}
+
+/* Post header info */
+#posts .post .info {
+	margin: 0 0 10px 0;
+	float: left;
+}
+
+#posts .post .info a {
+	display: block;
+	text-decoration: none;
+}
+
+#posts .post .info a h1 {
+	margin: 0;
+	font-size: 16px;
+	color: #222;
+	font-weight: 400;
+}
+
+#posts .post .info a time {
+	margin: 0 0 5px 0;
+	font-size: 12px;
+	color: #888;
+	display: block;
+}
+
+#posts .post .info a:hover h1, #posts .post .info a:hover time {
+	text-decoration: underline;
+}
+
+/* Post header actions */
+#posts .post .actions {
+	display: none;
+	position: absolute;
+	top: 10px;
+	right: 15px;
+}
+
+#posts .post:hover .actions {
+	display: block;
+}
+
+#posts .post .actions a {
+	display: block;
+	color: #333;
+	text-decoration: none;
+	font-size: 12px;
+}
+
+/* Post content */
+#posts .post .content {
+	margin: 10px;
+	font-size: 15px;
+	font-weight: 300;
+}
+
+/* Post content media */
+#posts .post .content .media {
+	margin: 10px 0;
+	padding-top: 10px;
+	border-top: 1px solid #E0E0E0;
+	text-align: center;
+}
+
+#posts .post .content .media img {
+	max-width: 328px;
+	max-height: 328px;
+}
+
+/* Individual Post Animation */
+@-webkit-keyframes slideFromBottom {
+	0% {
+		-webkit-transform-origin: center center;
+		-webkit-transform: translateY(10px);
+		opacity: 0;
+	}
+	100% {
+		-webkit-transform-origin: center center;
+		-webkit-transform: translateY(0);
+		opacity: 1;
+	}
+}
+@-moz-keyframes slideFromBottom {
+	0% {
+		-moz-transform-origin: center center;
+		-moz-transform: translateY(10px);
+		opacity: 0;
+	}
+	100% {
+		-moz-transform-origin: center center;
+		-moz-transform: translateY(0);
+		opacity: 1;
+	}
+}
+@-o-keyframes slideFromBottom {
+	0% {
+		-o-transform-origin: center center;
+		-o-transform: translateY(10px);
+		opacity: 0;
+	}
+	100% {
+		-o-transform-origin: center center;
+		-o-transform: translateY(0);
+		opacity: 1;
+	}
+}
+@keyframes slideFromBottom {
+	0% {
+		transform-origin: center center;
+		transform: translateY(10px);
+		opacity: 0;
+	}
+	100% {
+		transform-origin: center center;
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+#posts .post {
+	-webkit-animation-duration: 400ms;
+	-moz-animation-duration: 400ms;
+	-o-animation-duration: 400ms;
+	animation-duration: 400ms;
+	-webkit-animation-fill-mode: both;
+	-moz-animation-fill-mode: both;
+	-o-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-name: slideFromBottom;
+	-moz-animation-name: slideFromBottom;
+	-o-animation-name: slideFromBottom;
+	animation-name: slideFromBottom;
+}
+
+/* Individual New Post Animation */
+@-webkit-keyframes slideFromTop {
+	0% {
+		-webkit-transform-origin: center center;
+		-webkit-transform: translateY(-10px);
+		opacity: 0;
+	}
+	100% {
+		-webkit-transform-origin: center center;
+		-webkit-transform: translateY(0);
+		opacity: 1;
+	}
+}
+@-moz-keyframes slideFromTop {
+	0% {
+		-moz-transform-origin: center center;
+		-moz-transform: translateY(-10px);
+		opacity: 0;
+	}
+	100% {
+		-moz-transform-origin: center center;
+		-moz-transform: translateY(0);
+		opacity: 1;
+	}
+}
+@-o-keyframes slideFromTop {
+	0% {
+		-o-transform-origin: center center;
+		-o-transform: translateY(-10px);
+		opacity: 0;
+	}
+	100% {
+		-o-transform-origin: center center;
+		-o-transform: translateY(0);
+		opacity: 1;
+	}
+}
+@keyframes slideFromTop {
+	0% {
+		transform-origin: center center;
+		transform: translateY(-10px);
+		opacity: 0;
+	}
+	100% {
+		transform-origin: center center;
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+#posts .post.new-post {
+	-webkit-animation-duration: 400ms;
+	-moz-animation-duration: 400ms;
+	-o-animation-duration: 400ms;
+	animation-duration: 400ms;
+	-webkit-animation-fill-mode: both;
+	-moz-animation-fill-mode: both;
+	-o-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-name: slideFromTop;
+	-moz-animation-name: slideFromTop;
+	-o-animation-name: slideFromTop;
+	animation-name: slideFromTop;
+}

@@ -1,0 +1,119 @@
+/* // ... */
+
+.slider .slide-wrapper .slide.partial .caption.left p {
+	/* // ... */
+}
+
+/* 2D */
+@-webkit-keyframes flip {
+	0% {
+		-webkit-transform-origin: center center;
+		-webkit-transform: rotateX(180deg);
+	}
+	100% {
+		-webkit-transform-origin: center center;
+		-webkit-transform: rotateX(0deg);
+	}
+}
+@-moz-keyframes flip {
+	0% {
+		-moz-transform-origin: center center;
+		-moz-transform: rotateX(180deg);
+	}
+	100% {
+		-moz-transform-origin: center center;
+		-moz-transform: rotateX(0);
+	}
+}
+@-o-keyframes flip {
+	0% {
+		-o-transform-origin: center center;
+		-o-transform: rotateX(180deg);
+	}
+	100% {
+		-o-transform-origin: center center;
+		-o-transform: rotateX(0);
+	}
+}
+@keyframes flip {
+	0% {
+		transform-origin: center center;
+		transform: rotateX(180deg);
+	}
+	100% {
+		transform-origin: center center;
+		transform: rotateX(0);
+	}
+}
+
+.slider .slide-wrapper .slide.two-d {
+	-webkit-animation-duration: 1s;
+	-moz-animation-duration: 1s;
+	-o-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	-moz-animation-fill-mode: both;
+	-o-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-name: flip;
+	-moz-animation-name: flip;
+	-o-animation-name: flip;
+	animation-name: flip;
+}
+
+/* 3D */
+@-webkit-keyframes cube {
+	0% {
+		-webkit-transform-origin: center center;
+		-webkit-transform: scale3d(.6,.6,.6) rotateY(180deg) rotateX(-90deg) translateZ(200px);
+	}
+	100% {
+		-webkit-transform-origin: center center;
+		-webkit-transform: scale3d(1,1,1) rotateY(0) rotateX(0) translateZ(0);
+	}
+}
+@-moz-keyframes cube {
+	0% {
+		-moz-transform-origin: center center;
+		-moz-transform: scale3d(.6,.6,.6) rotateY(180deg) rotateX(-90deg) translateZ(200px);
+	}
+	100% {
+		-moz-transform-origin: center center;
+		-moz-transform: scale3d(1,1,1) rotateY(0) rotateX(0) translateZ(0);
+	}
+}
+@-o-keyframes cube {
+	0% {
+		-o-transform-origin: center center;
+		-o-transform: scale3d(.6,.6,.6) rotateY(180deg) rotateX(-90deg) translateZ(200px);
+	}
+	100% {
+		-o-transform-origin: center center;
+		-o-transform: scale3d(1,1,1) rotateY(0) rotateX(0) translateZ(0);
+	}
+}
+@keyframes cube {
+	0% {
+		transform-origin: center center;
+		transform: scale3d(.6,.6,.6) rotateY(180deg) rotateX(-90deg) translateZ(200px);
+	}
+	100% {
+		transform-origin: center center;
+		transform: scale3d(1,1,1) rotateY(0) rotateX(0) translateZ(0);
+	}
+}
+
+.slider .slide-wrapper .slide.three-d {
+	-webkit-animation-duration: 1s;
+	-moz-animation-duration: 1s;
+	-o-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	-moz-animation-fill-mode: both;
+	-o-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-name: cube;
+	-moz-animation-name: cube;
+	-o-animation-name: cube;
+	animation-name: cube;
+}

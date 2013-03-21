@@ -1,0 +1,15 @@
+.lightbox-wrapper .lightbox-content iframe {
+	display: block;
+	border: none;
+	overflow: auto;
+	min-width: 400px;
+	min-height: 300px;
+}
+
+.lightbox-wrapper .lightbox-content div.html {
+	display: block;
+}
+
+#hidden-sample-div {
+	display: none;
+}

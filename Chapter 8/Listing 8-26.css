@@ -1,0 +1,66 @@
+/* ... */
+
+/* Individual Post Animation */
+@-webkit-keyframes slideFromBottom {
+	0% {
+		-webkit-transform-origin: center center;
+		-webkit-transform: translateY(10px);
+		opacity: 0;
+	}
+	100% {
+		-webkit-transform-origin: center center;
+		-webkit-transform: translateY(0);
+		opacity: 1;
+	}
+}
+@-moz-keyframes slideFromBottom {
+	0% {
+		-moz-transform-origin: center center;
+		-moz-transform: translateY(10px);
+		opacity: 0;
+	}
+	100% {
+		-moz-transform-origin: center center;
+		-moz-transform: translateY(0);
+		opacity: 1;
+	}
+}
+@-o-keyframes slideFromBottom {
+	0% {
+		-o-transform-origin: center center;
+		-o-transform: translateY(10px);
+		opacity: 0;
+	}
+	100% {
+		-o-transform-origin: center center;
+		-o-transform: translateY(0);
+		opacity: 1;
+	}
+}
+@keyframes slideFromBottom {
+	0% {
+		transform-origin: center center;
+		transform: translateY(10px);
+		opacity: 0;
+	}
+	100% {
+		transform-origin: center center;
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+#posts .post {
+	-webkit-animation-duration: 400ms;
+	-moz-animation-duration: 400ms;
+	-o-animation-duration: 400ms;
+	animation-duration: 400ms;
+	-webkit-animation-fill-mode: both;
+	-moz-animation-fill-mode: both;
+	-o-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-name: slideFromBottom;
+	-moz-animation-name: slideFromBottom;
+	-o-animation-name: slideFromBottom;
+	animation-name: slideFromBottom;
+}

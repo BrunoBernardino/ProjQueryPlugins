@@ -1,0 +1,9 @@
+/* ... */
+
+#add-post form .loading {
+	display: none;
+	float: right;
+	margin-top: 8px;
+}
+
+/* ... */

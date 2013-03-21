@@ -1,0 +1,21 @@
+.lightbox-wrapper .lightbox-arrow {
+	display: none;
+	position: absolute;
+	top: 50%;
+	color: #333;
+	font-size: 14px;
+	font-weight: bold;
+	cursor: pointer;
+	padding: 1px 6px 2px;
+	border-radius: 10px;
+	background: #FFF;
+	margin-top: -10px;
+}
+
+.lightbox-wrapper .lightbox-arrow.left {
+	left: 2px;
+}
+
+.lightbox-wrapper .lightbox-arrow.right {
+	right: 2px;
+}

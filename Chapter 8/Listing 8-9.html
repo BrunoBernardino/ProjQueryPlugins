@@ -1,0 +1,19 @@
+<script type="text/x-underscore-template" id="template-posts">
+<% _.each( posts, function( post, index ) { %>
+	<article class="post" data-side="<%= (index % 2 === 0) ? 'left' : 'right' %>">
+		<header>
+			<!-- ... -->
+			<div class="info">
+				<!-- ... -->
+				<a href="#link-to-post">
+					<time datetime="<%= post.date %>" pubdate><%= post.date %></time>
+				</a>
+			</div>
+		</header>
+		<!-- ... -->
+	</article>
+<% }); %>
+<% if ( posts.length === 0 ) { %>
+	<p>There are no posts to show.</p>
+<% } %>
+</script>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+	<!-- ... -->
+	<body>
+		<!-- ... -->
+
+		<script type="text/x-underscore-template" id="template-posts">
+		<% _.each( posts, function( post, index ) { %>
+			<article class="post" data-side="<%= (index % 2 === 0) ? 'left' : 'right' %>" data-id="<%= post.id %>" id="post-<%= post.id %>">
+				<header>
+					<!-- ... -->
+					<span class="actions">
+						<a href="#" class="delete" title="Delete this post">&times;</a>
+					</span>
+				</header>
+				<!-- ... -->
+			</article>
+		<% }); %>
+		<% if ( posts.length === 0 ) { %>
+			<p>There are no posts to show.</p>
+		<% } %>
+		</script>
+	</body>
+</html>

@@ -1,0 +1,24 @@
+.slider .slider-bottom-nav {
+	display: block;
+	text-align: center;
+	width: 520px;
+	padding-top: 10px;
+}
+
+.slider .slider-bottom-nav span {
+	background: #CCC;
+	width: 10px;
+	height: 10px;
+	display: inline-block;
+	border-radius: 5px;
+	cursor: pointer;
+	margin: 0 2px;
+	transition: background 200ms;
+	-webkit-transition: background 200ms;
+	-moz-transition: background 200ms;
+	-o-transition: background 200ms;
+}
+
+.slider .slider-bottom-nav span.active {
+	background: #333;
+}

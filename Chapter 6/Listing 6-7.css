@@ -1,0 +1,129 @@
+/* // ... */
+
+.slider .slider-bottom-nav span.active {
+	/* // ... */
+}
+
+@-webkit-keyframes slideFromRight {
+	0% {
+		-webkit-transform-origin: center center;
+		-webkit-transform: translateX(200px);
+	}
+	100% {
+		-webkit-transform-origin: center center;
+		-webkit-transform: translateX(0);
+	}
+}
+@-moz-keyframes slideFromRight {
+	0% {
+		-moz-transform-origin: center center;
+		-moz-transform: translateX(200px);
+	}
+	100% {
+		-moz-transform-origin: center center;
+		-moz-transform: translateX(0);
+	}
+}
+@-o-keyframes slideFromRight {
+	0% {
+		-o-transform-origin: center center;
+		-o-transform: translateX(200px);
+	}
+	100% {
+		-o-transform-origin: center center;
+		-o-transform: translateX(0);
+	}
+}
+@keyframes slideFromRight {
+	0% {
+		transform-origin: center center;
+		transform: translateX(200px);
+	}
+	100% {
+		transform-origin: center center;
+		transform: translateX(0);
+	}
+}
+
+.slider .slide-wrapper .slide.partial .caption.right h1, .slider .slide-wrapper .slide.partial .caption.right p {
+	-webkit-animation-duration: 400ms;
+	-moz-animation-duration: 400ms;
+	-o-animation-duration: 400ms;
+	animation-duration: 400ms;
+	-webkit-animation-fill-mode: both;
+	-moz-animation-fill-mode: both;
+	-o-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-name: slideFromRight;
+	-moz-animation-name: slideFromRight;
+	-o-animation-name: slideFromRight;
+	animation-name: slideFromRight;
+}
+.slider .slide-wrapper .slide.partial .caption.right p {
+	-webkit-animation-duration: 800ms;
+	-moz-animation-duration: 800ms;
+	-o-animation-duration: 800ms;
+	animation-duration: 800ms;
+}
+
+@-webkit-keyframes slideFromLeft {
+	0% {
+		-webkit-transform-origin: center center;
+		-webkit-transform: translateX(-200px);
+	}
+	100% {
+		-webkit-transform-origin: center center;
+		-webkit-transform: translateX(0);
+	}
+}
+@-moz-keyframes slideFromLeft {
+	0% {
+		-moz-transform-origin: center center;
+		-moz-transform: translateX(-200px);
+	}
+	100% {
+		-moz-transform-origin: center center;
+		-moz-transform: translateX(0);
+	}
+}
+@-o-keyframes slideFromLeft {
+	0% {
+		-o-transform-origin: center center;
+		-o-transform: translateX(-200px);
+	}
+	100% {
+		-o-transform-origin: center center;
+		-o-transform: translateX(0);
+	}
+}
+@keyframes slideFromLeft {
+	0% {
+		transform-origin: center center;
+		transform: translateX(-200px);
+	}
+	100% {
+		transform-origin: center center;
+		transform: translateX(0);
+	}
+}
+
+.slider .slide-wrapper .slide.partial .caption.left h1, .slider .slide-wrapper .slide.partial .caption.left p {
+	-webkit-animation-duration: 400ms;
+	-moz-animation-duration: 400ms;
+	-o-animation-duration: 400ms;
+	animation-duration: 400ms;
+	-webkit-animation-fill-mode: both;
+	-moz-animation-fill-mode: both;
+	-o-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-name: slideFromLeft;
+	-moz-animation-name: slideFromLeft;
+	-o-animation-name: slideFromLeft;
+	animation-name: slideFromLeft;
+}
+.slider .slide-wrapper .slide.partial .caption.left p {
+	-webkit-animation-duration: 800ms;
+	-moz-animation-duration: 800ms;
+	-o-animation-duration: 800ms;
+	animation-duration: 800ms;
+}

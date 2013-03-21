@@ -1,0 +1,37 @@
+<div class="thumbnails">
+	<div class="thumbnail">
+		<a href="http://us.123rf.com/400wm/400/400/EnjoyLife25/EnjoyLife250608/EnjoyLife25060800219/503216-beautiful-sunset-on-the-beach.jpg" data-lightbox-item-options='{"alt":"Beautiful sunset on the beach"}'>
+			<img src="http://us.cdn2.123rf.com/168nwm/enjoylife25/enjoylife250608/enjoylife25060800219/503216-beautiful-sunset-on-the-beach.jpg" alt="Beautiful sunset on the beach">
+		</a>
+	</div>
+	<div class="thumbnail">
+		<a href="http://us.123rf.com/400wm/400/400/enjoylife25/enjoylife250710/enjoylife25071000026/1829472-beautiful-night-at-the-beach.jpg" data-lightbox-item-options='{"gallery":"beach","alt":"Beautiful night at the beach"}'>
+			<img src="http://us.cdn2.123rf.com/168nwm/enjoylife25/enjoylife250710/enjoylife25071000026/1829472-beautiful-night-at-the-beach.jpg" alt="Beautiful night at the beach">
+		</a>
+	</div>
+	<div class="thumbnail">
+		<a href="http://us.123rf.com/400wm/400/400/enjoylife25/enjoylife250710/enjoylife25071000023/1829475-a-beautiful-night-at-the-beach--slow-shutterspeed.jpg" data-lightbox-item-options='{"gallery":"beach","alt":"Beautiful night at the beach with slow shutterspeed"}'>
+			<img src="http://us.cdn1.123rf.com/168nwm/enjoylife25/enjoylife250710/enjoylife25071000023/1829475-a-beautiful-night-at-the-beach--slow-shutterspeed.jpg" alt="Beautiful night at the beach with slow shutterspeed">
+		</a>
+	</div>
+	<div class="thumbnail">
+		<a href="http://us.123rf.com/400wm/400/400/EnjoyLife25/EnjoyLife250608/EnjoyLife25060800020/482752-beautiful-sunset-landscape-photo.jpg" data-lightbox-item-options='{"gallery":"beach","alt":"Beautiful sunset landscape"}'>
+			<img src="http://us.cdn2.123rf.com/168nwm/enjoylife25/enjoylife250608/enjoylife25060800020/482752-beautiful-sunset-landscape-photo.jpg" alt="Beautiful sunset landscape">
+		</a>
+	</div>
+</div>
+
+<script type="text/x-underscore-template" id="templates-lightbox">
+	<div id="<%= lightboxID %>-background" class="<%= backgroundClass %>"></div>
+	<div id="<%= lightboxID %>" class="<%= wrapperClass %>">
+		<span id="<%= lightboxID %>-close" class="<%= closeButtonClass %>">×</span>
+		<span id="<%= lightboxID %>-arrow-left" class="<%= arrowButtonClass %> <%= leftArrowButtonAddedClass %>">«</span>
+		<span id="<%= lightboxID %>-arrow-right" class="<%= arrowButtonClass %> <%= rightArrowButtonAddedClass %>">»</span>
+		<div id="<%= lightboxID %>-content" class="<%= contentClass %>">
+		</div>
+	</div>
+</script>
+
+<script type="text/x-underscore-template" id="templates-lightbox-image">
+	<img id="<%= lightboxID %>-img-<%= generatedID %>" src="<%= imageSrc %>" alt="<%= imageAlt %>">
+</script>

@@ -1,0 +1,101 @@
+h1, p {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #FFF;
+	margin: 10px 5px;
+}
+
+h1 {
+	font-size: 22px;
+}
+
+p {
+	font-size: 14px;
+}
+
+.slider {
+	display: block;
+	margin: 10px;
+	background: #333;
+	width: 520px;
+	height: 195px;
+}
+
+.slider .slider-nav {
+	display: block;
+	position: absolute;
+	margin-top: 76px;
+	color: #FFF;
+	font-size: 30px;
+	font-weight: bold;
+	cursor: pointer;
+	padding: 1px 10px 6px;
+	text-align: center;
+	background: #333;
+	opacity: 0;
+	transition: opacity 200ms;
+	-webkit-transition: opacity 200ms;
+	-moz-transition: opacity 200ms;
+	-o-transition: opacity 200ms;
+	z-index: 10;
+}
+
+.slider:hover .slider-nav {
+	opacity: 0.6;
+}
+
+.slider:hover .slider-nav:hover {
+	opacity: 1;
+}
+
+.slider .slider-nav.left {
+	margin-left: 0;
+	border-radius: 0 10px 10px 0;
+	display: none;
+}
+
+.slider .slider-nav.right {
+	margin-left: 485px;
+	border-radius: 10px 0 0 10px;
+}
+
+.slider .slide-wrapper {
+	display: block;
+	overflow: hidden;
+	width: 520px;
+	height: 195px;
+	position: relative;
+}
+
+.slider .slide-wrapper .slide {
+	display: none;
+	position: absolute;
+	width: 520px;
+	height: 195px;
+}
+
+.slider .slide-wrapper .slide.active {
+	display: block;
+}
+
+.slider .slide-wrapper .slide .caption {
+	display: block;
+	position: absolute;
+	margin: 10px;
+	width: 220px;
+	height: 175px;
+	background: rgba(0, 0, 0, .6);
+	z-index: 5;
+}
+
+.slider .slide-wrapper .slide .caption.left {
+	margin-left: 10px;
+}
+
+.slider .slide-wrapper .slide .caption.right {
+	margin-left: 290px;
+}
+
+.slider .slide-wrapper .slide img {
+	width: 520px;
+	height: 195px;
+}

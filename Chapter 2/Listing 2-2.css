@@ -1,0 +1,20 @@
+ .sample-form {
+	display: block;
+	padding: 10px;
+	background: #FFF;
+}
+
+.sample-form input, .sample-form button {
+	display: block;
+	margin: 5px 0;
+	padding: 5px 10px;
+}
+
+.sample-form input {
+	width: 200px;
+	font-size: 14px;
+}
+
+.sample-form button {
+	font-size: 16px;
+}

@@ -1,0 +1,35 @@
+h1, p {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #333;
+	margin: 10px 5px;
+}
+
+h1 {
+	font-size: 22px;
+}
+
+p {
+	font-size: 14px;
+}
+
+.toolTip {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background: #000;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	color: #FFF;
+	font-size: 10px;
+	line-height: 12px;
+	padding: 5px 10px;
+	position: absolute;
+	z-index: 9999;
+	min-width: 100px;
+	max-width: 160px;
+	display: none;
+	font-weight: normal;
+
+	zoom: 1;
+	filter:alpha(opacity=80);
+	opacity: 0.8;
+}

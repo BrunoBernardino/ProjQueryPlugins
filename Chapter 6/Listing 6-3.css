@@ -1,0 +1,38 @@
+/* ... */
+
+.slider .slide-wrapper .slide .caption.right {
+	/* ... */
+}
+
+.slider .slide-wrapper .slide.split .caption {
+	margin: 0;
+	width: 240px;
+	height: 195px;
+}
+
+.slider .slide-wrapper .slide.split .caption.left {
+	margin-left: 0;
+}
+
+.slider .slide-wrapper .slide.split .caption.right {
+	margin-left: 280px;
+}
+
+.slider .slide-wrapper .slide img {
+	/* ... */
+}
+
+.slider .slide-wrapper .slide.split img {
+	width: 280px;
+	height: 195px;
+}
+
+.slider .slide-wrapper .slide.split .caption.left + img {
+	margin-left: 240px;
+}
+
+.slider .slider-bottom-nav {
+	/* ... */
+}
+
+/* ... */

@@ -1,0 +1,34 @@
+<div class="thumbnails">
+	<!-- ... -->
+	<div class="thumbnail">
+		<a href="http://www.youtube.com/embed/BcL---4xQYA" data-lightbox-item-options='{"type":"iframe"}'>
+			<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/9/98/YouTube_Logo.svg/100px-YouTube_Logo.svg.png" alt="Youtube">
+		</a>
+	</div>
+	<div class="thumbnail">
+		<a href="#hidden-sample-div" data-lightbox-item-options='{"type":"html"}'>
+			<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/HTML5-logo.svg/100px-HTML5-logo.svg.png" alt="HTML5 Logo">
+		</a>
+	</div>
+</div>
+
+<div id="hidden-sample-div">
+	<h1>Sample</h1>
+	<p>This is a sample hidden div that will get added to the lightbox.</p>
+</div>
+
+<script type="text/x-underscore-template" id="templates-lightbox">
+	<!-- ... -->
+</script>
+
+<script type="text/x-underscore-template" id="templates-lightbox-image">
+	<!-- ... -->
+</script>
+
+<script type="text/x-underscore-template" id="templates-lightbox-iframe">
+	<iframe id="<%= lightboxID %>-iframe-<%= generatedID %>" src="<%= iframeURL %>"></iframe>
+</script>
+
+<script type="text/x-underscore-template" id="templates-lightbox-html">
+	<div id="<%= lightboxID %>-html-<%= generatedID %>" class="<%= htmlClass %>"><%= htmlContent %></div>
+</script>

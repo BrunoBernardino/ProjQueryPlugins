@@ -1,0 +1,33 @@
+<script type="text/x-underscore-template" id="template-posts">
+<% _.each( posts, function( post, index ) { %>
+	<article class="post" data-side="<%= (index % 2 === 0) ? 'left' : 'right' %>">
+		<header>
+			<i class="pointer"></i>
+			<div class="avatar">
+				<a href="#link-to-user">
+					<img src="<%= post.avatar %>" alt="<%= post.name %>">
+				</a>
+			</div>
+			<div class="info">
+				<a href="#link-to-user">
+					<h1><%= post.name %></h1>
+				</a>
+				<a href="#link-to-post">
+					<time datetime="<%= post.date %>"><%= post.date %></time>
+				</a>
+			</div>
+		</header>
+		<section class="content">
+			<p><%= _.escape( post.content ) %></p>
+			<% if ( post.image ) { %>
+				<div class="media">
+					<img src="<%= _.escape( post.image ) %>" alt="">
+				</div>
+			<% } %>
+		</section>
+	</article>
+<% }); %>
+<% if ( posts.length == 0 ) { %>
+	<p>There are no posts to show.</p>
+<% } %>
+</script>
