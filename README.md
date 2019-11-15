@@ -1,6 +1,6 @@
 # Pro jQuery Plugins
 
-This is the code (and image) repository for the Pro jQuery Plugins eBook available at http://projqueryplugins.brunobernardino.com/
+This is the code (and image) repository for the Pro jQuery Plugins eBook available at https://pro-jquery-plugins.brn.sh/
 
 ## License
 
@@ -16,4 +16,4 @@ Most code listings are available in JSFiddle ( http://jsfiddle.net/ ). In those 
 
 ## Author
 
-You can find more about Bruno Bernardino at http://brunobernardino.com
+You can find more about Bruno Bernardino at https://brunobernardino.com
