@@ -1,6 +1,6 @@
 # Pro jQuery Plugins
 
-This is the code (and image) repository for the Pro jQuery Plugins eBook available at https://pro-jquery-plugins.brn.sh/
+This is the code (and image) repository for the Pro jQuery Plugins eBook available at https://pro-jquery-plugins.onbrn.com/
 
 ## License
 
